@@ -1,0 +1,19 @@
+{
+    "name": "dendude/otus-1-5-13",
+    "description": "Использование TCP/IP сокетов. Создание клиента и многопоточного сервера.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Denis Kravtsov",
+            "email": "denis.kravtsov.1986@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DenDude\\": "src/"
+        }
+    }
+}
