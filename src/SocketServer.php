@@ -36,7 +36,7 @@ class SocketServer
             echo '[' . $pid . '] [' . $threadNo . '] Acceptor connect: ' . $socket . PHP_EOL;
             socket_write($socket, 'Process pid: ' . $pid . PHP_EOL);
             $command = trim(socket_read($socket, 2048));
-            echo 'Retrieve command: ' . $command . PHP_EOL;
+            echo '[' . $pid . '] [' . $threadNo . '] Retrieve command: ' . $command . PHP_EOL;
             socket_write($socket, '[' . $command . ']' . PHP_EOL);
             socket_close($socket);
         }
